@@ -6,7 +6,6 @@ Aplikacja React z niestandardowym menu rozwijanym, zawierająca **dropdown z wie
 
 - **Dropdown z wieloma wyborami**: Umożliwia użytkownikowi wybór wielu opcji jednocześnie. Każda wybrana opcja jest wyświetlana jako tag.
 - **Dropdown z pojedynczym wyborem**: Pozwala na wybór tylko jednej opcji na raz.
-- **Niestandardowe style**: Menu rozwijane oraz jego opcje są stylizowane za pomocą niestandardowego CSS, co zapewnia lepsze doświadczenia użytkownika.
 
 ## Demo na żywo
 
