@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+Custom DropDown Menu - Aplikacja React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jest to aplikacja z niestandardowym menu rozwijanym zbudowana w React, która zawiera dropdown z wieloma wybieranymi opcjami (multi-select) oraz dropdown z pojedynczym wyborem (single-select). Aplikacja umożliwia interakcję z rozwijanymi menu, gdzie użytkownicy mogą wybrać jedną lub więcej opcji, oferując prosty, ale elastyczny interfejs użytkownika do dokonywania wyborów.
+Funkcje:
 
-Currently, two official plugins are available:
+    Dropdown z wieloma wyborami: Umożliwia użytkownikowi wybór wielu opcji jednocześnie. Każda wybrana opcja jest wyświetlana jako tag.
+    Dropdown z pojedynczym wyborem: Pozwala na wybór tylko jednej opcji na raz.
+    Niestandardowe style: Menu rozwijane oraz jego opcje są stylizowane za pomocą niestandardowego CSS, co zapewnia lepsze doświadczenia użytkownika.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Demo na żywo
 
-## Expanding the ESLint configuration
+Możesz obejrzeć działającą wersję aplikacji pod tym linkiem: Custom DropDown Menu
+Instalacja
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Aby użyć tego projektu lokalnie, wykonaj następujące kroki:
 
-- Configure the top-level `parserOptions` property like this:
+    Sklonuj repozytorium:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+git clone https://github.com/drewniak1015/CustomDropDownMenu.git
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Wejdź do folderu projektu:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+cd CustomDropDownMenu
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Zainstaluj zależności:
+
+npm install
+
+Uruchom aplikację:
+
+    npm start
+
+Aplikacja będzie dostępna pod adresem http://localhost:3000.
+Technologie
+
+    React
+    CSS (dla niestandardowego stylowania)
+    JavaScript
